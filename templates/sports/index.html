@@ -159,10 +159,13 @@
         </section>
 
         <div class="row product-list">
+            {% for product in products %}
             <div class="col-md-4">
                 <section class="panel">
                     <div class="pro-img-box">
-                        <img src="https://www.bootdey.com/image/250x220/FFB6C1/000000" alt="" />
+                        <img style="height: 250px;" src="{{ product.picture.url }}"
+                                                 class="img-responsive"
+                                                 alt="...">
                         <a href="#" class="adtocart">
                             <i class="fa fa-shopping-cart"></i>
                         </a>
@@ -171,280 +174,17 @@
                     <div class="panel-body text-center">
                         <h4>
                             <a href="#" class="pro-title">
-                                Leopard Shirt Dress
+                                {{product.name}}
                             </a>
                         </h4>
-                        <p class="price">$300.00</p>
+                        <p class="price">${{product.price}}</p>
                     </div>
                 </section>
             </div>
-            <div class="col-md-4">
-                <section class="panel">
-                    <div class="pro-img-box">
-                        <img src="https://www.bootdey.com/image/250x220/6495ED/000000" alt="" />
-                        <a href="#" class="adtocart">
-                            <i class="fa fa-shopping-cart"></i>
-                        </a>
-                    </div>
+            {% endfor %}
 
-                    <div class="panel-body text-center">
-                        <h4>
-                            <a href="#" class="pro-title">
-                                Leopard Shirt Dress
-                            </a>
-                        </h4>
-                        <p class="price">$300.00</p>
-                    </div>
-                </section>
-            </div>
-            <div class="col-md-4">
-                <section class="panel">
-                    <div class="pro-img-box">
-                        <img src="https://www.bootdey.com/image/250x220/FF7F50/000000" alt="" />
-                        <a href="#" class="adtocart">
-                            <i class="fa fa-shopping-cart"></i>
-                        </a>
-                    </div>
-
-                    <div class="panel-body text-center">
-                        <h4>
-                            <a href="#" class="pro-title">
-                                Leopard Shirt Dress
-                            </a>
-                        </h4>
-                        <p class="price">$300.00</p>
-                    </div>
-                </section>
-            </div>
-            <div class="col-md-4">
-                <section class="panel">
-                    <div class="pro-img-box">
-                        <img src="https://www.bootdey.com/image/250x220/00BFFF/000000" alt="" />
-                        <a href="#" class="adtocart">
-                            <i class="fa fa-shopping-cart"></i>
-                        </a>
-                    </div>
-
-                    <div class="panel-body text-center">
-                        <h4>
-                            <a href="#" class="pro-title">
-                                Leopard Shirt Dress
-                            </a>
-                        </h4>
-                        <p class="price">$300.00</p>
-                    </div>
-                </section>
-            </div>
-            <div class="col-md-4">
-                <section class="panel">
-                    <div class="pro-img-box">
-                        <img src="https://www.bootdey.com/image/250x220/00CED1/000000" alt="" />
-                        <a href="#" class="adtocart">
-                            <i class="fa fa-shopping-cart"></i>
-                        </a>
-                    </div>
-
-                    <div class="panel-body text-center">
-                        <h4>
-                            <a href="#" class="pro-title">
-                                Leopard Shirt Dress
-                            </a>
-                        </h4>
-                        <p class="price">$300.00</p>
-                    </div>
-                </section>
-            </div>
-            <div class="col-md-4">
-                <section class="panel">
-                    <div class="pro-img-box">
-                        <img src="https://www.bootdey.com/image/250x220/9400D3/000000" alt="" />
-                        <a href="#" class="adtocart">
-                            <i class="fa fa-shopping-cart"></i>
-                        </a>
-                    </div>
-
-                    <div class="panel-body text-center">
-                        <h4>
-                            <a href="#" class="pro-title">
-                                Leopard Shirt Dress
-                            </a>
-                        </h4>
-                        <p class="price">$300.00</p>
-                    </div>
-                </section>
-            </div>
-            <div class="col-md-4">
-                <section class="panel">
-                    <div class="pro-img-box">
-                        <img src="https://www.bootdey.com/image/250x220/FFD700/000000" alt="" />
-                        <a href="#" class="adtocart">
-                            <i class="fa fa-shopping-cart"></i>
-                        </a>
-                    </div>
-
-                    <div class="panel-body text-center">
-                        <h4>
-                            <a href="#" class="pro-title">
-                                Leopard Shirt Dress
-                            </a>
-                        </h4>
-                        <p class="price">$300.00</p>
-                    </div>
-                </section>
-            </div>
-            <div class="col-md-4">
-                <section class="panel">
-                    <div class="pro-img-box">
-                        <img src="https://www.bootdey.com/image/250x220/ADD8E6/000000" alt="" />
-                        <a href="#" class="adtocart">
-                            <i class="fa fa-shopping-cart"></i>
-                        </a>
-                    </div>
-
-                    <div class="panel-body text-center">
-                        <h4>
-                            <a href="#" class="pro-title">
-                                Leopard Shirt Dress
-                            </a>
-                        </h4>
-                        <p class="price">$300.00</p>
-                    </div>
-                </section>
-            </div>
-            <div class="col-md-4">
-                <section class="panel">
-                    <div class="pro-img-box">
-                        <img src="https://www.bootdey.com/image/250x220/20B2AA/000000" alt="" />
-                        <a href="#" class="adtocart">
-                            <i class="fa fa-shopping-cart"></i>
-                        </a>
-                    </div>
-
-                    <div class="panel-body text-center">
-                        <h4>
-                            <a href="#" class="pro-title">
-                                Leopard Shirt Dress
-                            </a>
-                        </h4>
-                        <p class="price">$300.00</p>
-                    </div>
-                </section>
-            </div>
-            <div class="col-md-4">
-                <section class="panel">
-                    <div class="pro-img-box">
-                        <img src="https://www.bootdey.com/image/250x220/3CB371/000000" alt="" />
-                        <a href="#" class="adtocart">
-                            <i class="fa fa-shopping-cart"></i>
-                        </a>
-                    </div>
-
-                    <div class="panel-body text-center">
-                        <h4>
-                            <a href="#" class="pro-title">
-                                Leopard Shirt Dress
-                            </a>
-                        </h4>
-                        <p class="price">$300.00</p>
-                    </div>
-                </section>
-            </div>
-            <div class="col-md-4">
-                <section class="panel">
-                    <div class="pro-img-box">
-                        <img src="https://www.bootdey.com/image/250x220/FFB6C1/000000" alt="" />
-                        <a href="#" class="adtocart">
-                            <i class="fa fa-shopping-cart"></i>
-                        </a>
-                    </div>
-
-                    <div class="panel-body text-center">
-                        <h4>
-                            <a href="#" class="pro-title">
-                                Leopard Shirt Dress
-                            </a>
-                        </h4>
-                        <p class="price">$300.00</p>
-                    </div>
-                </section>
-            </div>
-            <div class="col-md-4">
-                <section class="panel">
-                    <div class="pro-img-box">
-                        <img src="https://www.bootdey.com/image/250x220/C71585/000000" alt="" />
-                        <a href="#" class="adtocart">
-                            <i class="fa fa-shopping-cart"></i>
-                        </a>
-                    </div>
-
-                    <div class="panel-body text-center">
-                        <h4>
-                            <a href="#" class="pro-title">
-                                Leopard Shirt Dress
-                            </a>
-                        </h4>
-                        <p class="price">$300.00</p>
-                    </div>
-                </section>
-            </div>
-            <div class="col-md-4">
-                <section class="panel">
-                    <div class="pro-img-box">
-                        <img src="https://www.bootdey.com/image/250x220/191970/000000" alt="" />
-                        <a href="#" class="adtocart">
-                            <i class="fa fa-shopping-cart"></i>
-                        </a>
-                    </div>
-
-                    <div class="panel-body text-center">
-                        <h4>
-                            <a href="#" class="pro-title">
-                                Leopard Shirt Dress
-                            </a>
-                        </h4>
-                        <p class="price">$300.00</p>
-                    </div>
-                </section>
-            </div>
-            <div class="col-md-4">
-                <section class="panel">
-                    <div class="pro-img-box">
-                        <img src="https://www.bootdey.com/image/250x220/87CEEB/000000" alt="" />
-                        <a href="#" class="adtocart">
-                            <i class="fa fa-shopping-cart"></i>
-                        </a>
-                    </div>
-
-                    <div class="panel-body text-center">
-                        <h4>
-                            <a href="#" class="pro-title">
-                                Leopard Shirt Dress
-                            </a>
-                        </h4>
-                        <p class="price">$300.00</p>
-                    </div>
-                </section>
-            </div>
-            <div class="col-md-4">
-                <section class="panel">
-                    <div class="pro-img-box">
-                        <img src="https://www.bootdey.com/image/250x220/FFB6C1/000000" alt="" />
-                        <a href="#" class="adtocart">
-                            <i class="fa fa-shopping-cart"></i>
-                        </a>
-                    </div>
-
-                    <div class="panel-body text-center">
-                        <h4>
-                            <a href="#" class="pro-title">
-                                Leopard Shirt Dress
-                            </a>
-                        </h4>
-                        <p class="price">$300.00</p>
-                    </div>
-                </section>
+                <a href="{% url 'logout' %}">Logout</a>
             </div>
         </div>
     </div>
-</div>
 {% endblock %}
