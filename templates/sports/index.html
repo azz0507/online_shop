@@ -1,8 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
-<div class="container bootdey">
+    {% if user.is_authenticated %}
     <div class="col-md-3">
         <section class="panel">
             <div class="panel-body">
@@ -143,13 +142,20 @@
                 </section>
             </div>
             {% endfor %}
-
-            <form action="{% url 'logout' %}" method="post">
-                {% csrf_token %}
-                <button class="btn btn-primary" type="submit">Logout</button>
-            </form>
-
         </div>
     </div>
-</div>
+        {% else %}
+        <div class="container">
+           <h1>Login</h1>
+            <form action="{% url 'index' %}" method="POST">
+                {% csrf_token %}
+                <label for="name">Ism</label>
+                <input type="text" name="username" id="name">
+                <br>
+                <label for="password">Parol</label>
+                <input type="password" name="password" id="password" >
+                <button type="submit"> Login</button>
+            </form>
+        </div>
+          {% endif %}
 {% endblock %}

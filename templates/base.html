@@ -12,6 +12,18 @@
     <link rel="stylesheet" href="{% static 'sports/css/index.css' %}">
 </head>
 <body>
+<div class="container">
+    {% if messages %}
+        {% for message in messages %}
+            {{ message }}
+        {% endfor %}
+    {% endif %}
+    {% if user.is_authenticated %}
+        <form action="{%url 'logout' %}" method="POST">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-primary">Logout</button>
+        </form>
+    {% endif %}
     {% block content %}
 
     {% endblock %}
@@ -19,5 +31,7 @@
     {% block detail %}
 
     {% endblock %}
+</div>
+
 </body>
 </html>
